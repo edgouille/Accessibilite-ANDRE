@@ -13,6 +13,7 @@ func aboutHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "about.html")
 }
 
+
 func otherHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "other.html")
 }
