@@ -1,0 +1,110 @@
+/* Styles pour votre mise en page */
+/* Assurez-vous d'ajouter des styles accessibles pour les éléments visuels et interactifs */
+/* Cela inclut les couleurs, les contrastes, les tailles de police, les marges, etc. */
+/* Veuillez noter que les styles ci-dessous ne sont qu'un exemple et doivent être adaptés selon vos besoins */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer verticalement */
+}
+
+article {
+    max-width: 600px; /* Limiter la largeur de l'article */
+    margin-bottom: 40px;
+    padding: 20px; /* Ajout de marge intérieure pour l'article */
+    border: 1px solid #ddd; /* Ajout d'une bordure autour de l'article */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre autour de l'article */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+li:last-child {
+    border-bottom: none;
+}

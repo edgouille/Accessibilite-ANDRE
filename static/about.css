@@ -1,0 +1,129 @@
+/* Styles pour votre mise en page */
+/* Assurez-vous d'ajouter des styles accessibles pour les éléments visuels et interactifs */
+/* Cela inclut les couleurs, les contrastes, les tailles de police, les marges, etc. */
+/* Veuillez noter que les styles ci-dessous ne sont qu'un exemple et doivent être adaptés selon vos besoins */
+
+/* Styles pour la page "À Propos" */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer verticalement */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Styles pour le carrousel d'images */
+
+.carousel-section {
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: hidden; /* Modification pour cacher la barre de défilement horizontale */
+    scroll-snap-type: x mandatory;
+    position: relative;
+}
+
+.carousel-images {
+    display: flex; /* Ajout pour aligner les images dans la même ligne */
+}
+
+.carousel img {
+    scroll-snap-align: start;
+    max-width: 100%; /* Ajustement pour la largeur maximale */
+    max-height: 200px; /* Hauteur maximale uniforme pour les images */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.controls button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 16px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.controls button::before,
+.controls button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+.controls button.prev::before {
+    left: 8px;
+    clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+}
+
+.controls button.next::after {
+    right: 8px;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
+
+.controls button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.controls button:hover::before,
+.controls button:hover::after {
+    background-color: #fff;
+}
